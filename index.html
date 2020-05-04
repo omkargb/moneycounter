@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency counter</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.mi.css">
+    <title>Indian Currency counter</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
 </head>
 
@@ -14,55 +14,58 @@
         <div class="row">
             <div class="col">
 			
-                <form name="coinform" method="post">
-				
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="col d-table-cell"><label class="col-form-label float-left">Enter bill amount :&nbsp;</label>
-							<input class="form-control  form-control-sm text-dark" type="number" id="uramt" min="0"  />
+                <form name="" method="post">
+                            <div class="col-10">
+							<table class="table ">
+							<tr colspan="2">
+							<td>Enter bill amount : </td>
+							<td>			<input class="form-control  form-control-sm text-dark" type="number" id="uramt" min="0"  /> </td>
+							</tr>
+							</table>
+							
 							</div>
 							<p></p>
 							
                             <div class="card">
-                                <div class="card-header">
-                                    <h6 class="text-center mb-0"> Currency counts </h6>
+                                <div class="card-header bg-light">
+                                    Currency denomination : 
                                 </div>
                                 <div class="card-body">
                                     <div class="form-row">
-                                        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong>1 :&nbsp;</strong></small>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong> Rs. 1 :&nbsp;</strong></small>
 										<input class="form-control" type="number" name="one" value="" min="0"></div>
 										
-                                        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong>2 :&nbsp;</strong></small>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong> Rs. 2 :&nbsp;</strong></small>
  											<input class="form-control" type="number" name="two" value="" min="0"></div>
 											
-                                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong>5 :&nbsp;</strong></small>
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong> Rs. 5 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="five" value="" min="0"></div>
 											
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong>10 :&nbsp;</strong></small>
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text float-left"><strong> Rs. 10 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="ten" value="" min="0"></div>
 											
-                            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong>20 :&nbsp;</strong></small>
+                            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong> Rs. 20 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="twenty" value="" min="0"></div>
 											
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong>50 :&nbsp;</strong></small>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong> Rs. 50 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="fifty" value="" min="0"></div>
 											
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong>100 :&nbsp;</strong></small>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong> Rs. 100 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="hun" value="" min="0"></div>
 											
-            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong>200 :&nbsp;</strong></small>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-info float-left"><strong> Rs. 200 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="twohun" value="" min="0"></div>
 											
-        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong>500 :&nbsp;</strong></small>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong> Rs. 500 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="fivehun" value="" min="0"></div>
 											
-    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong>1000 :&nbsp;</strong></small>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong> Rs. 1000 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="onek" value="" min="0"></div>
 											
-    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong>2000 :&nbsp;</strong></small>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong> Rs. 2000 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="twok" value="" min="0"></div>
 											
-    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong>5000 :&nbsp;</strong></small>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2"><small class="form-text text-danger float-left"><strong> Rs. 5000 :&nbsp;</strong></small>
 											<input class="form-control" type="number" name="fivek" value="" min="0"></div>
 											
     </div>
@@ -74,19 +77,31 @@
 	
 	
     <div class="form-row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><label class="col-form-label float-left">Total Currency :&nbsp;</label>
-		<input class="form-control form-control-sm text-dark" type="text" name="total" readonly=""></div>
+	
+								<table class="table ">
+							<tr colspan="2">
+							<td>Currency Total :&nbsp;</td>
+							<td> <input class="form-control form-control-sm text-dark" type="text" name="total" readonly=""> </td>
+							</tr>							
+							
+							<tr colspan="2">
+							<td>Change to give :&nbsp;</td>
+							<td><input class="form-control  form-control-sm" type="text" name="change" readonly=""></td>
+							</tr>
+							</table>
+							
+							
 		
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><label class="col-form-label float-left"><strong>Change to give :&nbsp;</strong>
-		</label><input class="form-control  form-control-sm text-dark" type="text" name="change" readonly=""></div>
+		
+		
     </div>
-    </div>
-    </div>
+
     </form>
 	
     </div>
     </div>
     </div>
+	
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/cal.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
