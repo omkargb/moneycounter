@@ -6,16 +6,14 @@ sum = (!num ? 0 : num) * val;  // the sum for that bill or coin
 
 if (isNaN(amount)) 
 { // if the entire is not a number
-alert( "' " + num + " ' is not a valid entry." );
+alert( "' " + num + " ' is invalid entry." );
 return 0;
 }
-
-else
-return sum; // if it is OK, send sum back
+else	return sum; // if it is OK, send sum back
 }
 
-function money(form) {
-	
+function money(form) 
+{
 	var uamt= document.getElementById("uramt").value;
 	
 fivek = s(form.fivek.value, 5000); // Each amount is the returned value
@@ -31,30 +29,24 @@ five = s(form.five.value, 5);
 two = s(form.two.value, 2);
 one = s(form.one.value, 1);
 
-
-// add up all the amounts
+// add amounts
 var ttl = one+two+five+ten+twenty+fifty+hun+twohun+fivehun+onek+twok+fivek;
-
 var chg= ttl-uamt;
 
 if(ttl==0)
-{ 
-form.total.value="please enter currency counts.";
-}
+{ 		form.total.value="Please enter currency counts.";		}
 else
-{
-form.total.value = "Rs. " + ttl; // display total amount
+{		form.total.value = "Rs. " + ttl; 		// display total amount		
 }
-
 
 if(chg<0)
 {
-	form.change.value="Currency given is less by" +chg;
+	form.change.value="Currency given is less by " +(-chg);
 }
+else if(chg==ttl)
+{		form.change.value="Please enter Bill amount." ;		}
 else
-{
-form.change.value="Rs. " + chg;
-}
+{		form.change.value="Rs. " + chg;		}
 
 
 }
