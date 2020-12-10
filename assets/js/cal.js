@@ -41,7 +41,7 @@ else
 
 if(chg<0)
 {
-	form.change.value="Currency given is less by " +(-chg);
+	form.change.value="Currency given is less by Rs." +(-chg);
 }
 else if(chg==ttl)
 {		form.change.value="Please enter Bill amount." ;		}
